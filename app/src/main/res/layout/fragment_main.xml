@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="4dp">
+
+    <ImageView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="237dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/calorie" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        tools:targetApi="lollipop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stateListAnimator="@drawable/lift_on_touch"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        app:cardBackgroundColor = "#ff3366">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome back! XXX"
+                android:textSize="30dp"
+                android:textColor="#ffffff"/>
+
+            <TextClock
+                android:layout_below="@id/tv_welcome"
+                android:id="@+id/tv_clock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:format24Hour="HH:mm:ss\ndd/MM/yyyy EEEE"
+                android:format12Hour="hh:mm:ss\ndd/MM/yyyy EEEE"
+                android:textColor="#ffffff"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card2"
+        tools:targetApi="lollipop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stateListAnimator="@drawable/lift_on_touch"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        app:cardBackgroundColor = "#ff3366">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_cal_goal1"
+                    android:text="Goal Calorie Set"
+                    android:textSize="30dp"
+                    android:textColor="#ffffff"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+                    <EditText
+                        android:gravity="top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_cal_goal2"
+                        android:text="0"
+                        android:textSize="40dp"
+                        android:inputType="number"
+                        android:textColor="#ffffff"/>
+                </RelativeLayout>
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

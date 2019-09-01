@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv0"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Username"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv0"
+            android:layout_alignBaseline="@+id/tv0"
+            android:textSize="18sp"
+            android:hint="username"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvpw"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Password"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvpw1"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/tvpw"
+            android:layout_alignBaseline="@+id/tvpw"
+            android:textSize="18sp"
+            android:hint="password"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/tvpw2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvpw1"
+            android:layout_alignBaseline="@+id/tvpw1"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:hint="4 characters or longer"
+            android:text=""
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvpw4"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Password"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvpw5"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/tvpw4"
+            android:layout_alignBaseline="@+id/tvpw4"
+            android:textSize="18sp"
+            android:hint="password"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/tvpw6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvpw5"
+            android:layout_alignBaseline="@+id/tvpw5"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:hint="confirm password"
+            android:text=""
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Name"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="name"
+            android:layout_toRightOf="@+id/tv3"
+            android:layout_alignBaseline="@+id/tv3"
+            android:text=""
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="SurName"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="surname"
+            android:layout_toRightOf="@+id/tv4"
+            android:layout_alignBaseline="@+id/tv4"
+            android:text=""
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:text="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="surname"
+        android:layout_toRightOf="@+id/tv5"
+        android:layout_alignBaseline="@+id/tv5"
+        android:text=""
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Height"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="height"
+            android:layout_toRightOf="@+id/tv6"
+            android:layout_alignBaseline="@+id/tv6"
+            android:inputType="number"
+            android:text="0"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Weight"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="weight"
+            android:layout_toRightOf="@+id/tv7"
+            android:layout_alignBaseline="@+id/tv7"
+            android:text="0"
+            android:inputType="number"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Address"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="address"
+            android:inputType="textPostalAddress"
+            android:layout_toRightOf="@+id/tv8"
+            android:layout_alignBaseline="@+id/tv8"
+            android:text=""
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Postcode"
+            android:inputType="number"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="postcode"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/tv9"
+            android:layout_alignBaseline="@+id/tv9"
+            android:text="0"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvdob"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Birthday"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextDob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="click to choose"
+            android:layout_toRightOf="@+id/tvdob"
+            android:layout_alignBaseline="@+id/tvdob"
+            android:inputType="none"
+            android:text=""
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvgender"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Gender"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender"
+            android:layout_toRightOf="@id/tvgender"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Male"
+                android:text="M"
+                android:checked="true"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Female"
+                android:text="F"
+                android:checked="true"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/genderresult"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:hint="click to choose"
+            android:layout_toRightOf="@+id/tvgender"
+            android:layout_alignBaseline="@+id/tvgender"
+            android:inputType="none"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/genderresult2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="select the gender"
+            android:layout_toRightOf="@+id/gender"
+            android:layout_alignBaseline="@+id/tvgender"
+            android:inputType="none"
+            android:text=""
+            android:gravity="right"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvlevel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Level"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvlevelseleted"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:hint="Level of activity"
+            android:layout_toRightOf="@+id/tvlevel"
+            android:layout_alignBaseline="@+id/tvlevel"
+            android:inputType="none"
+            android:text=""
+            />
+
+        <Spinner
+            android:id="@+id/spinner_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvlevelseleted"
+            >
+        </Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/steppermile"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="SPM"
+            android:gravity="left"
+            android:textSize="18sp"
+            />
+        <EditText
+            android:id="@+id/editsteppermile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Step per mile"
+            android:layout_toRightOf="@+id/steppermile"
+            android:inputType="number"
+            android:layout_alignBaseline="@+id/steppermile"
+            android:text="0"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit!"
+            android:textColor="#F7E70A0A"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
